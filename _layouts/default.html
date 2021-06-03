@@ -20,11 +20,14 @@
     <img src="{{site.logo | relative_url}}" alt="Logo" />
     {% endif %}
 
-    <p>{{ site.description | default: site.github.project_tagline }}</p>
+    <p>
+      <a href="/cv_resume">CV/Resume</a> &nbsp;&nbsp; <a href="/research">Research</a> &nbsp;&nbsp; <a href="/teaching">Teaching</a>
+    </p>
 
     {% if site.github.is_user_page %}
-    <p class="view"><a href="{{ site.github.owner_url }}">GitHub Profile</a><br>
-    <a href="https://www.linkedin.com/in/patrick-rooney-9779bb57/"><img src="files/linkedin_button.png" alt="Linkedin Button"/></a></p>    {% endif %}
+    <p><a href="{{ site.github.owner_url }}"><img src="files/github_button.png" alt="Github Button"/></a>&nbsp;&nbsp;
+    <a href="https://www.linkedin.com/in/patrick-rooney-9779bb57/"><img src="files/linkedin_button.png" alt="Linkedin Button"/></a></p>
+    {% endif %}
     <p><small>Hosted on GitHub Pages<br>
     Theme adapted from <a href="https://github.com/orderedlist">orderedlist</a></small></p>
     {% if site.show_downloads %}
