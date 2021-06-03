@@ -25,6 +25,8 @@
     {% if site.github.is_user_page %}
     <p class="view"><a href="{{ site.github.owner_url }}">GitHub Profile</a></p>
     <p><a href="https://www.linkedin.com/in/patrick-rooney-9779bb57/"><img src="files/linkedin_button.png" alt="Linkedin Button"/></a></p>    {% endif %}
+    <p><small>Hosted on GitHub Pages</small></p>
+    <p><small>Theme adapted from <a href="https://github.com/orderedlist">orderedlist</a></p>
     {% if site.show_downloads %}
     <ul class="downloads">
       <li><a href="{{ site.github.zip_url }}">Download <strong>ZIP File</strong></a></li>
@@ -38,12 +40,6 @@
     {{ content }}
 
   </section>
-  <footer>
-    {% if site.github.is_project_page %}
-    <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
-    {% endif %}
-    <p><small>Hosted on GitHub Pages &mdash; Theme adapted from <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-  </footer>
 </div>
 <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
 {% if site.google_analytics %}
