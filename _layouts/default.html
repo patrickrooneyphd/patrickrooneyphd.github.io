@@ -15,30 +15,22 @@
 <div class="wrapper">
   <header>
     <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
+    <br>
+    <p><h2><a href="..">Home</a></h2></p>
+    <p><h2><a href="../cv_resume">CV/Resume</a></h2></p>
+    <p><h2><a href="../research">Research</a></h2></p>
+    <p><h2><a href="../teaching">Teaching</a></h2></p>
 
+    <p><a href="{{ site.github.owner_url }}"><img src="../files/github_button.png" alt="Github Button"/></a>&nbsp;&nbsp;
+      <a href="https://www.linkedin.com/in/patrick-rooney-9779bb57/"><img src="../files/linkedin_button.png" alt="Linkedin Button"/></a></p>
+
+    <p><small>Hosted on GitHub Pages<br>
+      Theme adapted from <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+  </header>
+  <section>
     {% if site.logo %}
     <img src="{{site.logo | relative_url}}" alt="Logo" />
     {% endif %}
-
-    <p>
-      <a href="/cv_resume">CV/Resume</a> &nbsp;&nbsp; <a href="/research">Research</a> &nbsp;&nbsp; <a href="/teaching">Teaching</a>
-    </p>
-
-    {% if site.github.is_user_page %}
-    <p><a href="{{ site.github.owner_url }}"><img src="files/github_button.png" alt="Github Button"/></a>&nbsp;&nbsp;
-    <a href="https://www.linkedin.com/in/patrick-rooney-9779bb57/"><img src="files/linkedin_button.png" alt="Linkedin Button"/></a></p>
-    {% endif %}
-    <p><small>Hosted on GitHub Pages<br>
-    Theme adapted from <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-    {% if site.show_downloads %}
-    <ul class="downloads">
-      <li><a href="{{ site.github.zip_url }}">Download <strong>ZIP File</strong></a></li>
-      <li><a href="{{ site.github.tar_url }}">Download <strong>TAR Ball</strong></a></li>
-      <li><a href="{{ site.github.repository_url }}">View On <strong>GitHub</strong></a></li>
-    </ul>
-    {% endif %}
-  </header>
-  <section>
 
     {{ content }}
 
